@@ -52,27 +52,16 @@ This project implements a **secure biometric login flow**:
 
 ## 🔹 System Architecture
 
-User Clicks Biometric Login
-      ↓
-Flask Server Sends START:auth_id to ESP32
-      ↓
-ESP32 Captures Face
-      ↓
-Edge Impulse ML Model Recognizes User
-      ↓
-ESP32 Sends user_id to Flask
-      ↓
-Flask Generates JWT Token
-      ↓
-Token Sent to Client via Socket.IO
-      ↓
-Token Valid?
-  ┌─────────────┴─────────────┐
- Yes                         No
-  ↓                          ↓
-Redirect to                Redirect to
-Dashboard                 Login Page
-(home.html)
+- User Clicks Biometric Login  
+- Flask Server Sends START:auth_id to ESP32  
+- ESP32 Captures Face  
+- Edge Impulse ML Model Recognizes User  
+- ESP32 Sends user_id to Flask  
+- Flask Generates JWT Token  
+- Token Sent to Client via Socket.IO  
+- Token Valid?  
+  - Yes → Redirect to Dashboard (home.html)  
+  - No → Redirect to Login Page  
 
 ---
 
