@@ -63,7 +63,6 @@ flowchart LR
     G --> H{Token Valid?}
     H -->|Yes| I[Redirect to Dashboard (home.html)]
     H -->|No| J[Redirect to Login Page]
-```
 
 ---
 
@@ -102,8 +101,7 @@ PyJWT
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/esp32-biometric-login.git
-cd "cs6301-project"
+git clone https://github.com/jpandya1161/esp32-biometric-login.git
 ```
 
 2. **Install Python dependencies**
