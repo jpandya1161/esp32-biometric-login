@@ -52,17 +52,27 @@ This project implements a **secure biometric login flow**:
 
 ## 🔹 System Architecture
 
-```mermaid
-flowchart LR
-    A[User Clicks Biometric Login] --> B[Flask Server Sends START:auth_id to ESP32]
-    B --> C[ESP32 Captures Face]
-    C --> D[Edge Impulse ML Model Recognizes User]
-    D --> E[ESP32 Sends user_id to Flask]
-    E --> F[Flask Generates JWT Token]
-    F --> G[Token Sent to Client via Socket.IO]
-    G --> H{Token Valid?}
-    H -->|Yes| I[Redirect to Dashboard (home.html)]
-    H -->|No| J[Redirect to Login Page]
+User Clicks Biometric Login
+      ↓
+Flask Server Sends START:auth_id to ESP32
+      ↓
+ESP32 Captures Face
+      ↓
+Edge Impulse ML Model Recognizes User
+      ↓
+ESP32 Sends user_id to Flask
+      ↓
+Flask Generates JWT Token
+      ↓
+Token Sent to Client via Socket.IO
+      ↓
+Token Valid?
+  ┌─────────────┴─────────────┐
+ Yes                         No
+  ↓                          ↓
+Redirect to                Redirect to
+Dashboard                 Login Page
+(home.html)
 
 ---
 
