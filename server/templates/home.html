@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-home.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='images/Marvel-Logo.png') }}" alt="Marvel Logo" />
+        </header>
+
+        <nav></nav>
+
+        <main>
+            <h1>Welcome, {{ user_id if user_id else 'Guest' }}!</h1>
+
+            <p>
+                Marvel Studios is a powerhouse in the world of
+                <a href="#">superhero cinema</a>, known for creating the most successful interconnected film universe in history.
+            </p>
+            <p>Here are the timeline of Marvel Cinematic Universe:</p>
+
+            <a href="https://www.rottentomatoes.com/m/captain_america_the_first_avenger" target="_blank">1. Captain America: The First Avenger</a>
+            <img src="{{ url_for('static', filename='images/capitan-america.jpg') }}" alt="1st_marvel_movie" />
+
+            <a href="https://www.rottentomatoes.com/m/captain_marvel" target="_blank">2. Captain Marvel</a>
+            <img src="{{ url_for('static', filename='images/captain-marvel.jpg') }}" alt="2nd Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/iron_man" target="_blank">3. Iron man</a>
+            <img src="{{ url_for('static', filename='images/Ironman-1.jpg') }}" alt="3rd Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/iron_man_2" target="_blank">4. Iron man 2</a>
+            <img src="{{ url_for('static', filename='images/Ironman-2.jpg') }}" alt="4th Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/the_incredible_hulk" target="_blank">5. The Incredible Hulk</a>
+            <img class="custom-size" src="{{ url_for('static', filename='images/Incredible-Hulk.jpg') }}" alt="5th Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/thor" target="_blank">6. Thor</a>
+            <img class="custom-size" src="{{ url_for('static', filename='images/Thor-1.jpg') }}" alt="6th Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/marvels_the_avengers" target="_blank">7. The Avengers</a>
+            <img src="{{ url_for('static', filename='images/Avengers.jpg') }}" alt="7th Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/thor_the_dark_world" target="_blank">8. Thor: The Dark world</a>
+            <img src="{{ url_for('static', filename='images/Thor-2.jpg') }}" alt="8th Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/iron_man_3" target="_blank">9. Iron man 3</a>
+            <img class="custom-size" src="{{ url_for('static', filename='images/Ironman-3.jpg') }}" alt="9th Marvel" />
+
+            <a href="https://www.rottentomatoes.com/m/captain_america_the_winter_soldier_2014" target="_blank">10. Captain America and The Winter Soldier</a>
+            <img class="custom-size" src="{{ url_for('static', filename='images/capitan-america-2.jpg') }}" alt="10th Marvel" />
+        </main>
+    </div>
+
+    <footer>
+        <a href="#">Next&gt;</a>
+        <div class="fit"></div>
+    </footer>
+</body>
+</html>

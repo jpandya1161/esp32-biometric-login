@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+/*For Font*/
+html{
+    height: 100%;
+}
+body {
+    background: linear-gradient(135deg, #ff512f, #dd2476, #1fa2ff, #12d8fa, #a6ffcb, #f9d423, #ff512f);
+    background-image: url(images/Bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;          /* Adjust to cover full screen */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    text-align: center;
+}
+header {
+    height: 200px;
+    text-align: center;      /* Ensures centered content */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+header img {
+    width: 50%;              /* Adjust: try 50-70% for your preference */
+    height: auto;            /* Keep aspect ratio */
+    display: block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Optional: slight depth */
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    padding: 50px;
+}
+.custom-size {
+    width: 1200px; 
+}
+
+h1{
+    color: gold;
+    font-size: 84px;
+    font-family: "Bungee", sans-serif;
+}
+a{
+    color: gold;
+    font-size: 30px;
+    font-family: "Bungee", sans-serif; 
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-decoration:none;
+}
+p{
+    color: gold;
+    font-size: 25px;
+    font-family: "TikTok Sans", sans-serif; 
+}
+
+p a{
+    color: #dd2476;
+    font-family: "TikTok Sans", sans-serif;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.296);
+    font-size: 30px;
+    color: gold;
+    font-family: "Bungee", sans-serif;
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 10px;
+    
+}
+.fit{
+    width: 200px;
+    height: 80px;
+}
+
+
