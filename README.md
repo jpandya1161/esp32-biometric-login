@@ -147,11 +147,11 @@ http://0.0.0.0:5000
 
 ## ✅ Features
 
-- 🔹 **Biometric login** using ESP32 camera  
-- 🔹 **On-device ML inference** with Edge Impulse  
-- 🔹 **JWT-based authentication** with expiration handling  
-- 🔹 **Background token cleanup** using threading  
-- 🔹 **Real-time Socket.IO communication** for instant feedback  
+- **Biometric login** using ESP32 camera  
+- **On-device ML inference** with Edge Impulse  
+- **JWT-based authentication** with expiration handling  
+- **Background token cleanup** using threading  
+- **Real-time Socket.IO communication** for instant feedback  
 
 ---
 
